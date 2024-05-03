@@ -79,15 +79,15 @@ if "!RF2!" equ "" (
     exit /b 1
   )
 )
-echo DWH RF1 ("!RF1!"):
+echo DWH RF1 (!RF1!):
 type "!RF1!"
 echo DWH: End of RF1
 
-echo DWH RF2 ("!RF2!"):
+echo DWH RF2 (!RF2!):
 type "!RF2!"
 echo DWH: End of RF2
 
-fc.exe "!RF1!" "!RF2!"
+fc.exe !RF1! !RF2!
 if %ERRORLEVEL% neq 0 (
   if %ERRORLEVEL% equ 1 (
     echo>&2 FAIL: files "{file1}" and "{file2}" differ. {fail_msg}
