@@ -79,6 +79,14 @@ if "!RF2!" equ "" (
     exit /b 1
   )
 )
+echo DWH RF1 ("!RF1!"):
+cat "!RF1!"
+echo DWH: End of RF1
+
+echo DWH RF2 ("!RF2!"):
+cat "!RF2!"
+echo DWH: End of RF2
+
 fc.exe /B "!RF1!" "!RF2!"
 if %ERRORLEVEL% neq 0 (
   if %ERRORLEVEL% equ 1 (
