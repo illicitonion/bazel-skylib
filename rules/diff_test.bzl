@@ -80,11 +80,11 @@ if "!RF2!" equ "" (
   )
 )
 echo DWH RF1 ("!RF1!"):
-cat "!RF1!"
+type "!RF1!"
 echo DWH: End of RF1
 
 echo DWH RF2 ("!RF2!"):
-cat "!RF2!"
+type "!RF2!"
 echo DWH: End of RF2
 
 fc.exe /B "!RF1!" "!RF2!"
